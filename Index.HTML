@@ -2,42 +2,123 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MP Photography</title>
-    <link rel="stylesheet" type="text/css" href="Css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="MP PHOTOGRAPHY">
+  <meta name="description" content="Las mejores fotografías para tus mejores momentos">
+  <meta name="keywords" content="fotografía, fotos, eventos, fotógrafo, arte, paisajes, retratos, bodas, cámara, flash">
+  <title>MP Photography</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="Css/bootstrap.min.css">
+  <!-- Script JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 
+<body class="cuerpo">
+  <header class="header">
+    <nav class="nav-bar">
+      <div>
+        <a class="up" href="Index.HTML">
+          <h1 class="logo">MP PHOTOGRAPHY</h1>
+        </a>
+      </div>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Index.HTML">Sobre Mi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Services.HTML">Paquetes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Portfolio.HTML">Portafolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contacto.HTML">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Photos.HTML">Experiencia</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <h2>ABOUT</h2>
+  <main>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel--inner">
+        <div class="carousel-item active car__1">
+        </div>
+        <div class="carousel-item car__2">
+        </div>
+        <div class="carousel-item car__3">
+        </div>
+        <div class="carousel-item car__4">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid my-5">
+      <div class="row">
+        <div class="col-xs-12 col-lg-6">
+          <h2>Las fotos de Mer</h2>
+          <p>Hola!
+            Soy Psicólogo de profesión y trabajo en el mundo de la tecnología.; bastante común,
+            podrías pensar que al igual que el 70% de la población, tengo una vida muy alineada
+            con lo convencional.
+            Como a muchas personas durante la pandemia global (esto fue escrito en 2021), me
+            encontré a mi mismo en una serie de situaciones en las que el arte y hacer cosas fuera de
+            mi zona de confort, lograron en muchos sentidos mantenerme estable y equilibrado.
+            Encontré en la fotografia a redefinir la forma en la que visualizo el mundo y en relato
+            de historias me tropecè con una forma nueva de aproximarme a los hechos. Podría
+            decirse que encontré una nuevos lentes y una voz, una voz que me permitió expresarme
+            en una nueva forma, más libre y más apsionado.
+            Descubrí una sensación de calidez al fotografiar, al retratar nuevas facetas de mis
+            amigos, al maravillarme por lo que ya tenía en frente pero que nunca le habia prestado
+            la atencion necesaria. Aprendí a valorar y querer más mi entorno, cada edificio, cada
+            árbol, cada persona.
+            
+            Asombro y maravilla, esas serian las sensaciones y sentimientos que me encantaria tras-
+            mitir con mis historias y fotografias. Acompañame a descrubir nuevas historias.</p>
+        </div>
+        <div class="col-xs-12 col-lg-6">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="MPImagenes/0009.jpg" class="d-block w-100" alt="..." width="500" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="MPImagenes/0008.jpg" class="d-block w-100" alt="..." width="500" height="500">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
 
-<body>
-    <header>
-        <h1>MP PHOTOGRAPHY</h1>
-        <nav>
-            <section class="Menu">
-                <a href="About.html">
-                    <div>About</div>
-                </a>
-                <a href="Photos.html">
-                    <div>Photos</div>
-                </a>
-                <a href="Portfolio.html">
-                    <div>Portfolio</div>
-                </a>
-                <a href="Services.html">
-                    <div>Services</div>
-                </a>
-                <a href="Contacto.html">
-                    <div>Contact</div>
-                </a>
-            </section>
-        </nav>
-    </header>
-    <h2> Merwin Ponce Photography</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni ipsum natus similique reprehenderit aliquam,
-        facilis vitae tempora, omnis cupiditate harum esse dolorum libero a illum in temporibus voluptatibus accusantium
-        dolor.</p>
-    <footer> <p>2021 Katherine Castillo - MP Photography</p></footer>
+  <footer>
+    <p>2021 Katherine Castillo - MP Photography</p>
+  </footer>
 </body>
 
 </html>

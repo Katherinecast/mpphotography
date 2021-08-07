@@ -1,0 +1,190 @@
+$primary-color:black;
+$secondary-color: #1f4037;
+
+@mixin sizes ($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+html {
+    background: $secondary-color;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $secondary-color, #99f2c8);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $secondary-color, #99f2c8);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    /* font-family: 'Benne', serif; */
+    padding: 20px;
+    border: 10px;
+
+}
+
+.encabezado {
+    background-color: transparent;
+}
+
+
+.up {
+    text-decoration: none;
+    color: $secondary-color;
+
+}
+
+
+.Grid--Container {
+    display: grid;
+    background-color: darkcyan;
+    grid-template-columns: auto auto auto
+}
+
+.Grid--Container div {
+    text-align: center;
+    border-top: 1px solid $primary-color;
+
+}
+
+.imagen {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+
+.imagen__1 {
+
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.imagen--2 {
+
+    position: relative;
+    display: inline-block;
+    text-align: right;
+}
+
+.about__MP {
+    display: flex;
+    background-color: #2F3029;
+    @include sizes(60px, 60px);
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+
+}
+
+fieldset {
+    background-color: #C8CBD8;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+}
+
+
+h2 {
+    color: #64ADD6
+}
+
+
+footer {
+    color: darkred;
+    text-align: center;
+    justify-content: end;
+}
+
+/* inicio de contacto */
+.content {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    box-sizing: border-box;
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .contactanos {
+        text-align: center;
+        font-size: 3em;
+        margin: 15px;
+
+    }
+
+    .contact-form {
+        background: $secondary-color;
+        margin: 100px;
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            label {
+                display: block;
+            }
+
+            p {
+                margin: 0;
+                padding: 1em;
+            }
+
+            .block {
+                grid-column: 1 / 3;
+            }
+
+            button,
+            input,
+            textarea {
+                width: 100%;
+                padding: .7em;
+                border: none;
+                background: none;
+                outline: 0;
+                color: #fff;
+                border-bottom: 1px solid $primary-color;
+            }
+
+            button {
+                background: $primary-color;
+                border: 0;
+                text-transform: uppercase;
+                padding: 1em;
+
+                button:hover,
+                button:focus {
+                    background: $primary-color;
+                    color: #fff;
+                    transition: background-color 1s ease-out;
+                    outline: 0;
+                }
+            }
+        }
+    }
+
+
+    /* CONTACT INFO */
+    .contact-info {
+        background: $primary-color;
+    }
+
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+
+    /* LARGE SIZE */
+    @media only screen and (min-width: 700px, 360px) {
+
+        .contact-info h4,
+        .contact-info ul,
+        .contact-info p {
+            text-align: left;
+        }
+    }
+}
+
+/* fin de contacto */

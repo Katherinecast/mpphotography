@@ -1,0 +1,164 @@
+html {
+  background: #1f4037;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#1f4037), to(#99f2c8));
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* font-family: 'Benne', serif; */
+  padding: 20px;
+  border: 10px;
+}
+
+.cuerpo {
+  background-color: transparent;
+}
+/* Header */
+.up {
+  text-decoration: none;
+  color: #1f4037;
+}
+
+.logo {background-color:#86bcdb;
+padding: 10px;
+margin: 20px;
+border: 30px;}
+/* fin de header */
+
+.Grid--Container {
+  display: -ms-grid;
+  display: grid;
+  background-color: darkcyan;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+}
+
+.Grid--Container div {
+  text-align: center;
+  border-top: 1px solid black;
+}
+
+.nav-bar {background-color:rgb(235, 214, 170);
+padding: 10px;
+margin: 50px;}
+
+
+fieldset {
+  background-color: #C8CBD8;
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+}
+
+h2 {
+  color: #64ADD6;
+}
+
+footer {
+  color: darkred;
+  text-align: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+}
+
+/* inicio de contacto */
+.content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* CONTACT INFO */
+  /* LARGE SIZE */
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content .contactanos {
+  text-align: center;
+  font-size: 3em;
+  margin: 15px;
+}
+
+.content .contact-form {
+  background: #1f4037;
+  margin: 100px;
+}
+
+.content .contact-form form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content .contact-form form label {
+  display: block;
+}
+
+.content .contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+
+.content .contact-form form .block {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+.content .contact-form form button,
+.content .contact-form form input,
+.content .contact-form form textarea {
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid black;
+}
+
+.content .contact-form form button {
+  background: black;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.content .contact-form form button button:hover,
+.content .contact-form form button button:focus {
+  background: black;
+  color: #fff;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+.content .contact-info {
+  background: black;
+}
+
+.content .contact-info h4,
+.content .contact-info ul,
+.content .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+@media only screen and (min-width: (700px, 360px)) {
+
+  .content .contact-info h4,
+  .content .contact-info ul,
+  .content .contact-info p {
+    text-align: left;
+  }
+}
+
+/* fin de contacto */
+/*# sourceMappingURL=style.css.map */
