@@ -25,6 +25,7 @@ margin: 20px;
 border: 30px;}
 /* fin de header */
 
+
 .Grid--Container {
   display: -ms-grid;
   display: grid;
@@ -38,9 +39,11 @@ border: 30px;}
   border-top: 1px solid black;
 }
 
-.nav-bar {background-color:rgb(235, 214, 170);
+/* .nav-bar {background-color:rgb(235, 214, 170);
 padding: 10px;
-margin: 50px;}
+margin: 50px;} */
+
+.carrousel-item {width: 100px;}
 
 
 fieldset {
